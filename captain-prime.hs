@@ -13,7 +13,7 @@ fate id'
   | right = "RIGHT"
   | otherwise = "DEAD"
   where
-    hasZeros = any (== '0') id'
+    hasZeros = '0' `elem` id'
     left = obeysLeftRule id'
     right = obeysRightRule id'
 

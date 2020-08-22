@@ -15,7 +15,7 @@ main = do
     putStrLn $ maybe "WRONG PASSWORD" unwords $ validate passwords loginAttempt
 
 removeRedundantPwds :: [String] -> [String]
-removeRedundantPwds = removeRedundantPwds' . reverse . sortBy (compare `on` length)
+removeRedundantPwds = removeRedundantPwds' . sortBy (flip compare `on` length)
   where
     removeRedundantPwds' [] = []
     removeRedundantPwds' (password : passwords)
