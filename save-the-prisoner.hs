@@ -1,3 +1,5 @@
+-- Challenge url: https://www.hackerrank.com/challenges/save-the-prisoner/problem
+
 import Control.Monad (replicateM_)
 
 main :: IO ()

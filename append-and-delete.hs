@@ -1,3 +1,5 @@
+-- Challenge url: https://www.hackerrank.com/challenges/append-and-delete/problem
+
 main :: IO ()
 main = do
     s0 <- getLine
